@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css/log_sign.css">
+	<link rel="stylesheet" type="text/css" href="css/switcher.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<!-- <img class="wave" src="images/wave.png">
+	<div class="container">
+		<div class="images">
+			<img src="images/bg.svg" style="width: 100%;">
+		</div> -->
+		<!-- <div class="login-content">
+			<form action="index.html">
+				<img src="images/avatar.svg">
+				<h2 class="title">Welcome to Egyptos</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" class="input">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input">
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div> -->
+		
+		<div class="container">
+			<img class="wave" src="images/wave.png">
+     	<div class="container">
+		    <div class="images">
+		    	<img src="images/bg.svg" style="width: 120%;">
+				</div>
+     	</div>
+	  	<div class="container">
+
+			<div class="app front">
+				<div class="header">
+					<span class="info">Login</span>
+					<div class="prompt">
+						<span class="ask">Don't have account?</span>
+						<button class="btn signup">sign up</button>
+					</div>
+				</div>
+				<div class="main">
+					<div class="user_field">
+						<div class="direct login">
+							<div class="icon">
+								<i class="fab fa-google fa-lg"></i>
+							</div>
+							<div class="icon">
+								<i class="fab fa-twitter fa-lg"></i>
+							</div>
+							<div class="icon">
+								<i class="fab fa-github fa-lg"></i>
+							</div>
+						</div>
+						<span class="option_text">or use your account instead</span>
+						<form class="_details">
+							<div class="textbox">
+								<input type="text">
+								<span class="input_detail">Username or Email</span>
+							</div>
+							<div class="textbox">
+								<input type="password">
+								<span class="input_detail">Password</span>
+							</div>
+						</form>
+					</div>
+					<button class="btn login">login</button>
+				</div>
+			</div>
+		
+		
+			<div class="app back">
+				<div class="header">
+					<span class="info">Sign Up</span>
+					<div class="prompt">
+						<span class="ask">Have an account?</span>
+						<button class="btn login">login</button>
+					</div>
+				</div>
+				<div class="main">
+					<div class="user_field">
+						<div class="direct login">
+							<div class="icon">
+								<i class="fab fa-google"></i>
+							</div>
+							<div class="icon">
+								<i class="fab fa-twitter"></i>
+							</div>
+							<div class="icon">
+								<i class="fab fa-github"></i>
+							</div>
+						</div>
+						<span class="option_text">or use your account instead</span>
+						<form class="_details">
+							<div class="textbox">
+								<input type="text">
+								<span class="input_detail">Username</span>
+							</div>
+							<div class="textbox">
+								<input type="email">
+								<span class="input_detail">Email</span>
+							</div>
+							<div class="textbox">
+								<input type="password">
+								<span class="input_detail">Password</span>
+							</div>
+						</form>
+					</div>
+					<button class="btn login">sign up</button>
+				</div>
+			</div>
+			</div>
+		</div>
+		<script>
+			console.clear();
+	
+			var signupBtn = document.querySelector('.app.front .btn.signup');
+			var loginBtn = document.querySelector('.app.back .btn.login');
+			var loginForm = document.querySelector('.app.front');
+			var signupForm = document.querySelector('.app.back');
+			var container = document.querySelector('.container');
+			
+			signupBtn.addEventListener('click', () => {
+				container.classList.toggle('active');
+			});
+			loginBtn.addEventListener('click', () => {
+				container.classList.toggle('active');
+			});
+			</script>
+		<script type="text/javascript" src="js/log_sign.js"></script>
+</body>
+</html>
